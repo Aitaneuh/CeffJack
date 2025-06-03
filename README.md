@@ -50,13 +50,6 @@ php artisan serve
 
 ---
 
-## 🌐 Live Demo (if hosted)
-
-[https://ceffjack.up.railway.app](https://ceffjack.up.railway.app)
-*Note: App may take a few seconds to start on free hosting.*
-
----
-
 ## 🤝 Contributing
 
 This project was built for educational purposes and self-improvement, but feel free to fork it or open issues if you'd like to contribute or adapt it.
