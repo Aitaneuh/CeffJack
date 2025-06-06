@@ -330,7 +330,7 @@
                             }
 
                             // Extraction des différentes séries depuis history
-                            const labels = data.map(entry => entry.date);
+                            const labels = data.map(entry => entry.label);
                             const totals = data.map(entry => entry.total);
                             const wins = data.map(entry => entry.wins);
                             const busts = data.map(entry => entry.busts);
