@@ -47,4 +47,9 @@ class User extends Authenticatable
             'is_admin'              => 'boolean',
         ];
     }
+
+    public function blackjackGames()
+    {
+        return $this->hasMany(BlackjackGame::class);
+    }
 }

@@ -33,7 +33,7 @@
         @if (Route::has('login'))
         <div class="flex items-center justify-between w-full">
             <p class="dark:text-[#EDEDEC] text-[#1b1b18]">
-                See on <b><a href="https://github.com/Aitaneuh" class="underline hover:decoration-red-600">GitHub.com</a></b>
+                See on <b><a href="https://github.com/Aitaneuh/CeffJack" class="underline hover:decoration-red-600">GitHub.com</a></b>
             </p>
             <nav class="flex gap-4">
                 @auth

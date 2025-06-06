@@ -40,7 +40,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/leaderboard', [LeaderboardController::class, 'index'])->name('leaderboard');
     Route::get('/history', [BlackjackController::class, 'history'])->name('history');
 
-    // Bonus (important)
+    // routes/web.php
+    Route::get('/stats/data', [StatsController::class, 'getFilteredStats'])->name('stats.data');
+
+    // Bonus
     Route::post('/bonus/claim', [BonusController::class, 'claim'])->name('bonus.claim');
 
     // Règles et raccourcis
