@@ -6,7 +6,7 @@
             </h2>
             <div class="text-center">
                     <label for="timeFilter" class="mr-2 font-semibold text-gray-800 dark:text-[#EDEDEC]">Filter by:</label>
-                    <select id="timeFilter" class="border border-gray-300 rounded dark:bg-[#1e1e1e] dark:text-[#EDEDEC]">
+                    <select id="timeFilter" class="border border-gray-300 rounded dark:bg-[#1e1e1e] dark:text-[#EDEDEC] px-2">
                         <option value="all">All Time</option>
                         <option value="today">Today</option>
                         <option value="7days">Last 7 Days</option>
