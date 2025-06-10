@@ -22,11 +22,11 @@
                     {{-- Joueur --}}
                     <div class="flex-1">
                         <h3 class="text-lg font-bold mb-2">Your Hand:</h3>
-                        <div class="flex items-center space-x-3 flex-wrap">
+                        <div class="flex items-center flex-wrap">
                             @foreach ($game['player'] as $card)
                                 <img src="{{ asset('images/' . strtolower($card['card']) . '.png') }}"
                                      alt="{{ $card['card'] }}"
-                                     class="w-24 rounded-md shadow" loading="lazy">
+                                     class="w-24 m-3 rounded-md shadow" loading="lazy">
                             @endforeach
                             <span class="ml-2 font-semibold text-lg">[Total: {{ $game['player_total'] }}]</span>
                         </div>
@@ -36,14 +36,14 @@
                     {{-- Dealer --}}
                     <div class="flex-1">
                         <h3 class="text-lg font-bold mb-2">Dealer's Hand:</h3>
-                        <div class="flex items-center space-x-3 flex-wrap">
+                        <div class="flex items-center flex-wrap">
                             @if ($game['state'] === 'playing')
                                 <img src="{{ asset('images/' . strtolower($game['dealer'][0]['card']) . '.png') }}"
                                      alt="{{ $game['dealer'][0]['card'] }}"
-                                     class="w-24 rounded-md shadow" loading="lazy">
+                                     class="w-24 rounded-md m-3 shadow" loading="lazy">
                                 <img src="{{ asset('images/card_back.png') }}"
                                      alt="Hidden Card"
-                                     class="w-24 rounded-md shadow" loading="lazy">
+                                     class="w-24 rounded-md m-3 shadow" loading="lazy">
                                 @php
                                     $value = $game['dealer'][0]['value'] === 1 ? 11 : $game['dealer'][0]['value'];
                                 @endphp
@@ -52,7 +52,7 @@
                                 @foreach ($game['dealer'] as $card)
                                     <img src="{{ asset('images/' . strtolower($card['card']) . '.png') }}"
                                          alt="{{ $card['card'] }}"
-                                         class="w-24 rounded-md shadow" loading="lazy">
+                                         class="w-24 rounded-md m-3 shadow" loading="lazy">
                                 @endforeach
                                 <span class="ml-2 font-semibold text-lg">[Total: {{ $game['dealer_total'] }}]</span>
                             @endif
